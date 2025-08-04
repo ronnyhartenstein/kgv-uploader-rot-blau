@@ -1,9 +1,4 @@
-Im Ordner mit Dockerfile:
-```
-docker build -t dateiweb .
-```
-
 Starten:
 ```
-docker run -it --rm -p 5000:5000 -v "$PWD/uploads:/var/www/html/uploads" dateiweb
+docker run -it --rm -p 80:80 -v "$PWD:/var/www/html" php:8.2-apache
 ```

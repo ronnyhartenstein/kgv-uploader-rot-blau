@@ -1,6 +1,6 @@
 <?php
 $uploadDir = __DIR__ . '/uploads';
-$stateFile = __DIR__ . '/active_team.txt';
+$stateFile = __DIR__ . '/daten/active_team.txt';
 $ip = $_SERVER['REMOTE_ADDR'];
 $team = (preg_match('/^(192\.168|10\.|127\.0\.0\.1)/', $ip)) ? 'rot' : 'blau';
 
